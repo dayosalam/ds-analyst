@@ -95,7 +95,7 @@
               <div class="lign-items-center">
 
                 <div>
-                  <img src="assets/img/portfolio/stockx00.jpeg" alt="">
+                  <img src="assets/img/portfolio/sentiment1.png" alt="">
                 </div>
 
               </div>
@@ -104,10 +104,10 @@
 
           <div class="">
             <div class="portfolio-info">
-              <h3>Data Analytics Consulting for StockX Sneaker Sales Analysis and Forecasting</h3>
+              <h3>ML Olympiad - Hausa Sentiment Analysis</h3>
               <ul>
-                <li><strong>Technologies</strong>: SQL, Python, Tableau</li>
-                <li><strong>Project date</strong>: 09 April, 2022</li>
+                <li><strong>Technologies</strong>: Python</li>
+                <li><strong>Project date</strong>: 09 March, 2022</li>
                 <!-- <li><strong>Visualization URL</strong>: <a href="https://public.tableau.com/app/profile/abdulwaheed.abdulsalam/viz/Stockx_16609433044910/Dashboard1">www.</a></li> -->
               </ul>
             </div>
@@ -115,49 +115,82 @@
             <div class="portfolio-description">
               <h2>Customer</h2>
               <p>
-                StockX is a leading online marketplace for buying and selling authentic sneakers, streetwear, and 
-                collectibles. They cater to a passionate community of sneaker enthusiasts and resellers.
+                The challenge was part of the ML Olympiad, An associated Kaggle Community Competitions hosted by ML GDEs or TFUGs, sponsored by Google Developers.
               </p>
             </div>
            <!-- Challenge -->
             <div class="portfolio-description">
               <h2>Challenge</h2>
               <p>
-                StockX was facing challenges in keeping up with the ever-changing sneaker market trends 
-                and accurately forecasting future sales.
-                They sought to leverage data analytics to gain deeper insights into their customer base, 
-                optimize pricing strategies, and improve sales forecasting accuracy.
+                The objective of this challenge was to develop a multi-class classification model to classify Hausa news content according to its specific category. Given a sentence, the task is to classify whether the sentence is of positive (1), negative (-1) or neutral (0) sentiment. For messages conveying more than one sentiment, whichever is the stronger sentiment should be chosen.
+
+                Predict if the text would be considered positive, neutral or negative (for an average user).
               </p>
             </div>
             <!-- SOlution -->
             <div class="portfolio-description">
               <h2>Solution</h2>
               <p>
-                 I started with the analysis of the StockX
-                 business objectives and requirements for the future sales forecasting analysis. After that, I reviewed the
-                  customer base, pricing strategies, and sales. Then I suggested enhanced data-driven insights to
-                  optimize their business strategies.
+                I developed a multi-class classification model to categorize Hausa news content based on sentiment.
+                  The model takes a Hausa sentence as input and predicts its sentiment as positive (1), negative (-1), or
+                   neutral (0).  The model was designed to identify the dominant sentiment, even if the sentence contains 
+                   elements of both positive and negative emotions.  In essence, the model predicts how an average user 
+                   would perceive the overall sentiment of the text.
               </p>
-              <ul style="list-style-type: disc;">
-                <li>Data Acquisition and Integration</li>
-                <li>Data Preprocessing</li>
-                <li>Exploratory Data Analysis to investigate data for patterns and anomalies, test hypothesis and check assumptions.</li>
-                <li>Sales Forecasting with Statistical Modeling</li>
-                <li>Data Visualization and Reporting</li>
-              </ul>
-              
+          
+                <ul>
+                  <li>
+                    Data Acquisition: Gathered a large corpus of Hausa news articles 
+                    labeled with sentiment categories (positive, neutral, negative).
+                   </li>
+                  <li>
+                    Data Preprocessing
+                    <ul>
+                      <li>Clean text data: Remove special characters, noise, and stop words.</li>
+        <li>Stemming/Lemmatization: Reduce words to root form for better generalizability.</li>
+        <li>Tokenization: Split text into individual words or sub-word units (depending on model).</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Model Selection and Training
+                    <ul>
+                      <li>Model Choice: After exploring multi-class classification models for text data. XGBClassifier was selected.</li>
+                      <li>Training and Hyperparameter Tuning</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Model Improvement and Evaluation
+                    <ul>
+                      <li>Analyze errors on the testing set to identify challenging text types.</li>
+                      <li>Combined multiple models to improve performance and reduce overfitting.</li>
+    
+                    </ul>
+                  </li>
+                  <li>
+                    Deployment
+                    <ul>
+                      <li>Integrated the trained model into an API for sentiment classification.</li>
+                      <li>Combined multiple models to improve performance and reduce overfitting.</li>
+    
+                    </ul>
+                  </li>
+                </ul>
             </div>
             
           <!-- Results -->
           <div class="portfolio-description">
             <h2>Results</h2>
             <p>
-              The data analytics consulting empowered StockX to significantly improve their business strategies. 
-              Advanced statistical models enhanced their ability to forecast market trends, leading to optimized 
-              inventory management and reduced risk of overstocking or understocking popular sneakers.
-               Additionally, data-driven insights allowed StockX to develop effective pricing strategies and
-                gain deeper customer understanding. This enabled them to tailor marketing efforts to specific
-                 customer segments, potentially boosting sales and profitability.
+              Our experimentation with a XGBClassifier for multi-class sentiment classification of Hausa news content
+               yielded promising results. The model achieved an accuracy of over 82% in classifying news 
+               articles as positive, neutral, or negative, demonstrating its effectiveness in real-time sentiment 
+               analysis of written news. The XGBClassifier network effectively captured long-range dependencies within sentences, 
+               leading to a robust understanding of sentiment in Hausa news articles.
+               The model achieved high accuracy in classifying positive and negative sentiments, 
+               exceeding 80% precision and recall for both categories. This project's success is further 
+               highlighted by our second-place finish in a relevant Kaggle competition. This achievement 
+               signifies the model's
+                strong performance compared to other competing approaches.
             </p>
           </div>
           </div>
@@ -165,7 +198,7 @@
          <div class="portfolio-description">
           <h2>Technologies and Tools</h2>
           <p>
-            SQL, Pandas, Python, NumPy, Jupyter, Tableau.
+            Pandas, Python, NumPy, Jupyter, seaborn, matplotlib, sklearn.
           </p>
         </div>
         </div>

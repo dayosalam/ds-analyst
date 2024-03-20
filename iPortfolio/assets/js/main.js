@@ -258,4 +258,17 @@
    */
   new PureCounter();
 
+  const callLink = document.getElementById('callLink');
+
+  callLink.addEventListener('click', function(event) {
+    const isMobile = /iPhone|iPad|iPod|Android|BlackBerry|IEMobile/i.test(navigator.userAgent);
+  
+    if (isMobile) {
+      event.preventDefault(); // Prevent default link behavior
+      window.location.href = "tel:+2347037378217"; // Force tel: protocol on mobile
+    }
+  });
+  
+
+
 })()
